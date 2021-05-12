@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">BudgetBuddyApp</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_home">Home</string>
+    <string name="title_purchase_history">Purchase History</string>
+    <string name="title_discounts">Discounts</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="go_login">New User?</string>
+    <string name="go_to_login">Create a new account</string>
+    <string name="go_registration">Already have an account?</string>
+    <string name="go_to_registration">Login now</string>
+
+    <string name="remaining_daily_budget">Remaining Daily Budget</string>
+    <string name="add_purchase">Add Purchase</string>
+    <string name="add_income">Add Income</string>
+    <string name="view_purchase_history">View Purchase History</string>
+
+    <string name="purchase">Purchase</string>
+    <string name="submit">Submit</string>
+    <string name="scan">Scan</string>
+    <string name="upload">Upload</string>
+    <string name="purchase_success">You\'ve successfully added your purchase!</string>
+    <string name="add_another_purchase">Add another purchase</string>
+
+    <string name="setup_fname">Enter your first name</string>
+    <string name="setup_income">Enter your monthly income</string>
+    <string name="setup_bills">Enter your recurring monthly bills</string>
+    <string name="setup_interests_title">Please choose some interests so we can recommend you deals!</string>
+
+    <string name="change_fname">First Name</string>
+    <string name="change_income">Monthly Income</string>
+    <string name="add_additional_income">This month\'s additional income:</string>
+    <string name="total_additional_income">Total Additional Income</string>
+    <string name="change_bills">Recurring Monthly Bills</string>
+
+    <string name="setup_bill_name">Name of bill</string>
+    <string name="amount">Amount</string>
+    <string name="add_bill">Add another bill</string>
+    <string name="next">Next</string>
+    <string name="firstname">First name</string>
+    <string name="income">Income</string>
+    <string name="billname">Bill name</string>
+    <string name="location_permission">Use location for interests:</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="interests">Interests</string>
+
+    <string-array name="categories_array">
+        <item>Bills</item>
+        <item>Groceries</item>
+        <item>Food and Drink</item>
+        <item>Entertainment</item>
+        <item>Travel</item>
+        <item>Transportation</item>
+        <item>Shopping</item>
+        <item>Home</item>
+        <item>Other</item>
+        <item>Select a category</item>
+    </string-array>
+
+    <string-array name="graphsSpinner">
+        <item>Pie Chart</item>
+        <item>Line Graph</item>
+    </string-array>
+
+    <string-array name="timePeriodSpinner">
+        <item>Week</item>
+        <item>Month</item>
+    </string-array>
+
+    <string name="time_period">Time Period</string>
+    <string name="Name">Name</string>
+    <string name="Date">Date</string>
+    <string name="Category">Category</string>
+    <string name="Amount">Amount</string>
+
+    <string name="title_cartesian_yaxis">Total Dollars Spent</string>
+    <string name="title_cartesian_xaxis">Date</string>
+
+    <string name="error_date">Please enter a date.</string>
+    <string name="error_name">Please enter a name.</string>
+    <string name="error_amount">Please enter an amount.</string>
+    <string name="error_category">Please select a category.</string>
+    <string name="error_first_name">Please enter your first name.</string>
+    <string name="error_income">Please enter your income.</string>
+    <string name="error_bill_name">Bill name cannot be empty.</string>
+    <string name="error_bill_amount">Bill amount cannot be empty.</string>
+    <string name="error_email">Please enter an email.</string>
+    <string name="error_password">Please enter a password.</string>
+
+    <string name="registration_success">Registration successful!</string>
+    <string name="registration_fail">Registration failed. You may already have an account.</string>
+    <string name="login_success">Login successful!</string>
+    <string name="login_fail">Login failed!</string>
+
+    <string name="graph_yaxis">Total Dollars Spent</string>
+    <string name="graph_xaxis">Date</string>
+    <string name="total_bills">total bills</string>
+
+    <string name="budgetleft">left for today\'s budget!</string>
+    <string name="welcome">Welcome back!</string>
+    <string name="name_of_purchase">Name Of Purchase</string>
+    <string name="amount_of_purchase">Amount Of Purchase</string>
+
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="hint_additional_income">Additional Income</string>
+    <string name="hint_purchase_date">Enter the date of your purchase</string>
+    <string name="hint_purchase_name">Enter the name of your purchase</string>
+    <string name="hint_purchase_amount">Enter the amount of your purchase</string>
+    <string name="hint_discount_search">Search for discounts</string>
+</resources>

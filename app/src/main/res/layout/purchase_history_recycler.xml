@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/pHNametxt"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="@string/Name"
+
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pHDateTxt"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="@string/Date"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/phCategoryTxt"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="@string/Category"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/phAmountTxt"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_weight="0.75"
+        android:text="@string/amount"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="32dp"
+    android:layout_marginLeft="32dp">
+
+    <TextView
+        android:id="@+id/firstNameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="bottom"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstNameEnter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstNameEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="firstname"
+        android:hint="@string/firstname"
+        android:inputType="text"
+        android:paddingBottom="6dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/incomeTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameTitle" />
+
+    <TextView
+        android:id="@+id/incomeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/incomeEnter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameEnter" />
+
+    <EditText
+        android:id="@+id/incomeEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="income"
+        android:hint="@string/income"
+        android:inputType="number|numberDecimal"
+        android:paddingBottom="6dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/additionalIncomeTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomeTitle" />
+
+    <TextView
+        android:id="@+id/additionalIncomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:gravity="bottom"
+        android:text="@string/add_additional_income"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/addAdditionalIncomeButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomeEnter" />
+
+    <TextView
+        android:id="@+id/additionalIncomeTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/addAdditionalIncomeButton"
+        app:layout_constraintStart_toEndOf="@+id/additionalIncomeTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomeEnter" />
+
+    <EditText
+        android:id="@+id/additionalIncomeEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:autofillHints="income"
+        android:hint="@string/hint_additional_income"
+        android:inputType="number|numberDecimal"
+        android:paddingBottom="6dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/billTitle"
+        app:layout_constraintEnd_toStartOf="@+id/addAdditionalIncomeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/additionalIncomeTitle"
+        app:layout_constraintBaseline_toBaselineOf="@+id/addAdditionalIncomeButton"/>
+
+    <Button
+        android:id="@+id/addAdditionalIncomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/billTitle"
+        app:layout_constraintEnd_toStartOf="@+id/subtractAdditionalIncomeButton"
+        app:layout_constraintStart_toEndOf="@+id/additionalIncomeEnter"
+        app:layout_constraintTop_toBottomOf="@+id/additionalIncomeTitle" />
+
+    <Button
+        android:id="@+id/subtractAdditionalIncomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/subtract"
+        app:layout_constraintBottom_toTopOf="@+id/billTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addAdditionalIncomeButton"
+        app:layout_constraintTop_toBottomOf="@+id/additionalIncomeTitle" />
+
+    <TextView
+        android:id="@+id/billTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollViewInterests"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addAdditionalIncomeButton" />
+
+    <ScrollView
+        android:id="@+id/scrollViewInterests"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/billTitle"
+        app:layout_constraintBottom_toTopOf="@+id/addBillButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billTitle">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true">
+
+            <TableRow
+                android:id="@+id/row1"
+                android:layout_width="267dp"
+                android:layout_height="31dp">
+
+                <EditText
+                    android:id="@+id/billName"
+                    android:layout_width="130dp"
+                    android:layout_height="46dp"
+                    android:autofillHints="billname"
+                    android:hint="@string/billname"
+                    android:inputType="text"
+                    android:paddingBottom="6dp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/billAmount"
+                    android:layout_width="152dp"
+                    android:layout_height="46dp"
+                    android:autofillHints="billamount"
+                    android:hint="@string/amount"
+                    android:inputType="number|numberDecimal"
+                    android:paddingBottom="6dp"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addBillButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="230dp"
+        android:text="@string/add_bill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewInterests" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
